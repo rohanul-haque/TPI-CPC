@@ -150,7 +150,13 @@ const Navbar = () => {
               </ul>
 
               <div className="mt-auto p-4 border-t">
-                <Button variant={"destructive"} className="w-full">
+                <Button
+                  onClick={() => {
+                    navigate("/signup"), setMobileOpen(false);
+                  }}
+                  variant={"destructive"}
+                  className="w-full"
+                >
                   Log In
                 </Button>
               </div>

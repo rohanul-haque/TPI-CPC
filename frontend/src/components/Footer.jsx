@@ -14,7 +14,7 @@ const FooterPage = () => {
         {/* Quick Links */}
         <div>
           <h3 className="text-xl font-bold mb-5">Quick Links</h3>
-          <ul className="space-y-3">
+          <ul className="grid grid-cols-2 gap-2">
             {navLink.map((link) => (
               <li key={link.id}>
                 <NavLink
@@ -153,7 +153,9 @@ const FooterPage = () => {
       <div className="border-t border-gray-800 mt-10 pt-6 text-center">
         <p className="text-gray-400 text-sm md:text-base">
           &copy; {new Date().getFullYear()} All rights reserved by
-          <b className="ml-1 text-white">❤️‍🔥 TPI CPC - Computer and Programming Club ❤️‍🔥</b>
+          <b className="ml-1 text-white">
+            ❤️‍🔥 TPI CPC - Computer and Programming Club ❤️‍🔥
+          </b>
         </p>
       </div>
     </footer>

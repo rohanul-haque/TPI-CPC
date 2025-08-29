@@ -11,7 +11,7 @@ import SectionTitle from "./SectionTitle";
 
 const OurTeamMember = () => {
   return (
-    <section className="mt-20">
+    <section className="mt-15">
       <SectionTitle
         title={"Meet Our Team Members 👥✨"}
         paragraph={`Meet our talented team 🤝. Each member brings passion, creativity 🎨, and dedication 🚀. Together, we learn, collaborate, and create amazing things 🌟!`}

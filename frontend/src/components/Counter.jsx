@@ -3,7 +3,7 @@ import CountUp from "react-countup";
 
 const Counter = () => {
   return (
-    <section className="pt-20">
+    <section className="mt-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-16">
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 text-center">
           {counterNumber.map((item) => (

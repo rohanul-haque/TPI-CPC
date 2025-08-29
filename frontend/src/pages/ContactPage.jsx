@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const ContactPage = () => {
   return (
-    <section className="py-12">
+    <section className="mt-6">
       <SectionTitle
         title="📬 Get in Touch ✨"
         paragraph={`💬 Have questions or ideas? Reach out to us! 🌟 We love hearing from you — let's connect and collaborate! 🤝📧`}

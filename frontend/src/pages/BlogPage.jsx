@@ -39,7 +39,7 @@ const BlogPage = () => {
   };
 
   return (
-    <section id="blog-list">
+    <section className="mt-6" id="blog-list">
       <SectionTitle
         title="Our Blogs 📝🌐"
         paragraph={`💡 Explore insightful articles, coding tips, and tech updates! 🚀 Stay updated and level up your skills with TPI CPC blogs! 📚✨`}

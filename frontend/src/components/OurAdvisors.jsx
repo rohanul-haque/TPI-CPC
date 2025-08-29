@@ -11,7 +11,7 @@ import SectionTitle from "./SectionTitle";
 
 const OurAdvisors = () => {
   return (
-    <section className="mt-20">
+    <section className="mt-6">
       <SectionTitle
         title={"Meet Our Advisors 🌟🧑‍💼"}
         paragraph={`Learn from experienced mentors 💡 who guide you every step. Gain knowledge 📚, inspiration ✨, and support 🚀 to grow your skills and career.`}

@@ -42,7 +42,7 @@ const EventPage = () => {
   };
 
   return (
-    <section className="py-10" id="event-list">
+    <section className="mt-6" id="event-list">
       <SectionTitle
         title="Our Events 📅🎉"
         paragraph={`🚀 Dive into exciting coding contests, workshops, and webinars! 💻 Join TPI CPC events to learn, innovate, and level up your tech skills! 🌟`}

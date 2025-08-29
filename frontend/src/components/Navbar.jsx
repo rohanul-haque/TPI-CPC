@@ -49,7 +49,7 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop Menu */}
-        <ul className="hidden lg:flex items-center gap-4">
+        <ul className="hidden lg:flex items-center gap-2">
           {navLink.map((link) => (
             <li key={link.id}>
               <NavLink
@@ -77,7 +77,7 @@ const Navbar = () => {
             {darkMode ? <Sun size={20} /> : <Moon size={20} />}
           </button>
           <Button variant={"destructive"} className="hidden sm:inline-flex">
-            Login
+            Join Us
           </Button>
           <button
             className="lg:hidden w-10 h-10 flex items-center justify-center rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-300"

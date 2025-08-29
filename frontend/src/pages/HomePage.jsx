@@ -7,6 +7,8 @@ import AboutPage from "./AboutPage";
 import BlogPage from "./BlogPage";
 import ContactPage from "./ContactPage";
 import EventPage from "./EventPage";
+import Faqs from "./Faqs";
+import Testimonials from "./Testimonials";
 
 const HomePage = () => {
   return (
@@ -15,10 +17,18 @@ const HomePage = () => {
       <Counter />
       <AboutPage />
       <WhyJoin />
+      <div className="mt-16"></div>
       <OurAdvisors />
       <OurTeamMember />
+      <div className="mt-16"></div>
       <EventPage />
+      <div className="mt-16"></div>
       <BlogPage />
+      <div className="mt-16"></div>
+      <Testimonials />
+      <div className="mt-16"></div>
+      <Faqs />
+      <div className="mt-16"></div>
       <ContactPage />
     </>
   );

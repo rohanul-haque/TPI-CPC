@@ -50,7 +50,6 @@ const BlogPage = () => {
         {currentBlogs.map((blog) => {
           const { id, image, title, description } = blog;
 
-          console.log(id)
           return (
             <div
               key={id}

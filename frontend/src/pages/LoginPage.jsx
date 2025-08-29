@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Eye, EyeOff } from "lucide-react";
 import React from "react";
+import { Link } from "react-router-dom";
 
 function LoginPage() {
   const [email, setEmail] = React.useState("");
@@ -51,12 +52,21 @@ function LoginPage() {
 
             {/* Password */}
             <div className="grid gap-2">
-              <label
-                htmlFor="password"
-                className="text-sm font-medium block text-gray-700 dark:text-gray-300"
-              >
-                Password
-              </label>
+              <div className="flex items-center justify-between">
+                {" "}
+                <label
+                  htmlFor="password"
+                  className="text-sm font-medium block text-gray-700 dark:text-gray-300"
+                >
+                  Password
+                </label>
+                <Link
+                  className="text-sm font-medium block underline"
+                  to={"/forgot-password"}
+                >
+                  Forgot your password
+                </Link>
+              </div>
               <div className="relative">
                 <Input
                   id="password"

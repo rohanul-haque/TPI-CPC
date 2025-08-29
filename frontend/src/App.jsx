@@ -8,12 +8,13 @@ import ContactPage from "./pages/ContactPage";
 import ErrorPage from "./pages/ErrorPage";
 import EventPage from "./pages/EventPage";
 import Faqs from "./pages/Faqs";
+import ForgotPassowordPage from "./pages/ForgotPassowordPage";
 import HomePage from "./pages/HomePage";
+import LoginPage from "./pages/LoginPage";
 import SignupPage from "./pages/SignupPage";
 import TeamPage from "./pages/TeamPage";
 import Testimonials from "./pages/Testimonials";
 import ViewBlogPage from "./pages/ViewBlogPage";
-import LoginPage from "./pages/LoginPage";
 
 const App = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -58,8 +59,9 @@ const App = () => {
         <Route path="/faqs" element={<Faqs />} />
         <Route path="/testimonials" element={<Testimonials />} />
         <Route path="/contact" element={<ContactPage />} />
-        <Route path="/signup" element={< SignupPage/>} />
-        <Route path="/login" element={< LoginPage/>} />
+        <Route path="/signup" element={<SignupPage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/forgot-password" element={<ForgotPassowordPage />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </AppLayout>

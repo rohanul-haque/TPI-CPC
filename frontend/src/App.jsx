@@ -1,3 +1,5 @@
+import { ChevronUp } from "lucide-react";
+import { useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import AppLayout from "./layouts/AppLayout";
 import AboutPage from "./pages/AboutPage";
@@ -12,8 +14,38 @@ import Testimonials from "./pages/Testimonials";
 import ViewBlogPage from "./pages/ViewBlogPage";
 
 const App = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 100);
+    };
+
+    // Add scroll listener
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup on unmount
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <AppLayout>
+      {/* Scroll to Top Button */}
+      {isScrolled && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-5 right-5 z-50 w-10 h-10 bg-indigo-500 shadow-lg rounded-md flex items-center justify-center hover:bg-indigo-600"
+          aria-label="Scroll to top"
+        >
+          <ChevronUp className="text-white" />
+        </button>
+      )}
+
+      {/* Routes */}
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />

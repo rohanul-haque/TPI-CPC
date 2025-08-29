@@ -3,7 +3,7 @@ import { ThemeContext } from "@/contexts/ThemeContext";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, Moon, Sun, X } from "lucide-react";
 import { useContext, useEffect, useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { Button } from "./ui/button";
 
 const Navbar = () => {
@@ -11,6 +11,8 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
 
   const { darkMode, setDarkMode } = useContext(ThemeContext);
+
+  const navigate = useNavigate();
 
   // Detect scroll
   useEffect(() => {
@@ -76,7 +78,11 @@ const Navbar = () => {
           >
             {darkMode ? <Sun size={20} /> : <Moon size={20} />}
           </button>
-          <Button variant={"destructive"} className="hidden sm:inline-flex">
+          <Button
+            onClick={() => navigate("/signup")}
+            variant={"destructive"}
+            className="hidden sm:inline-flex cursor-pointer"
+          >
             Join Us
           </Button>
           <button
